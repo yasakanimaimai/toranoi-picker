@@ -7,7 +7,39 @@
   </head>
 
   <body>
-    <div id="root"></div>
-    <script src="index.js"></script>
+    <!-- <div id="root"></div> -->
+    <!-- <script src="index.js"></script> -->
+
+    <textarea 
+      id="toranoi-board"
+      style="
+        width: 600px; 
+        height: 400px; 
+        resize: none;
+      "
+    >
+    </textarea>
+
+    <button 
+      id="copy-button"
+      style="
+        width: 600px;
+        height: 50px;
+      "
+    >
+      コピーする
+    </button>
+
+    <button
+      id="manage-button"
+      style="
+        width: 600px;
+        height: 50px
+      "
+    >
+      アプリで管理する
+    </button>
+
+    <script src="popup.js"></script>
   </body>
 </html>

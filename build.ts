@@ -52,8 +52,15 @@ const buildExtension = async (targetBrowser: Browser) => {
   await fs.mkdir(distPath('icons', targetBrowser), { recursive: true });
 
   // build tsx by esbuild
+  // build({
+  //   entryPoints: ['popup/index.tsx'],
+  //   bundle: true,
+  //   outdir: distPath('popup', targetBrowser),
+  //   watch: watchOption,
+  //   sourcemap: devFlag ? 'inline' : false,
+  // });
   build({
-    entryPoints: ['popup/index.tsx'],
+    entryPoints: ['popup/popup.ts'],
     bundle: true,
     outdir: distPath('popup', targetBrowser),
     watch: watchOption,
@@ -63,6 +70,13 @@ const buildExtension = async (targetBrowser: Browser) => {
     entryPoints: ['content/index.ts'],
     bundle: true,
     outdir: distPath('content', targetBrowser),
+    watch: watchOption,
+    sourcemap: devFlag ? 'inline' : false,
+  });
+  build({
+    entryPoints: ['background/index.ts'],
+    bundle: true,
+    outdir: distPath('background', targetBrowser),
     watch: watchOption,
     sourcemap: devFlag ? 'inline' : false,
   });
