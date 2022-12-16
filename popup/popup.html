@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-  </head>
 
-  <body>
-    <!-- <div id="root"></div> -->
-    <!-- <script src="index.js"></script> -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title></title>
+</head>
 
-    <textarea 
-      id="toranoi-board"
-      style="
+<body>
+  <!-- <div id="root"></div> -->
+  <!-- <script src="index.js"></script> -->
+
+  <textarea id="toranoi-board" style="
         width: 600px; 
         height: 400px; 
         resize: none;
-      "
-    >
+      ">
     </textarea>
 
-    <button 
-      id="copy-button"
-      style="
+  <button id="copy-button" style="
         width: 600px;
         height: 50px;
-      "
-    >
-      コピーする
-    </button>
+      ">
+    コピーする
+  </button>
 
-    <button
-      id="manage-button"
-      style="
+
+  <input id="user-name" type="text" placeholder="username" style="
         width: 600px;
         height: 50px
-      "
-    >
-      アプリで管理する
-    </button>
+      " />
 
-    <script src="popup.js"></script>
-  </body>
+  <input id="password" type="text" placeholder="password" style="
+        width: 600px;
+        height: 50px
+      " />
+
+  <button id="login-button" style="
+        width: 600px;
+        height: 50px
+      ">
+    アプリにログイン
+  </button>
+
+  <button id="save-button" style="
+        width: 600px;
+        height: 50px
+      ">
+    アプリに保存
+  </button>
+
+  <script src="popup.js"></script>
+</body>
+
 </html>
