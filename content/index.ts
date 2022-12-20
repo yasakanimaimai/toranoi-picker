@@ -50,8 +50,9 @@ function removeIcon() {
 }
 
 function addText(text) {
+
   // テキスト編集
-  text.replace(/\r?\n/g, '');
+  text = text.replace(/(^\r\n|^\n|^\r)/gm, '');
   text = "- " + text + "\n" + "\n";
 
   // ストレージのテキストを取得
