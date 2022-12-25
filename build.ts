@@ -60,7 +60,7 @@ const buildExtension = async (targetBrowser: Browser) => {
   //   sourcemap: devFlag ? 'inline' : false,
   // });
   build({
-    entryPoints: ['popup/popup.ts'],
+    entryPoints: ['popup/index.tsx'],
     bundle: true,
     outdir: distPath('popup', targetBrowser),
     watch: watchOption,
