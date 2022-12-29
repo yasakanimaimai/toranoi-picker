@@ -17,7 +17,8 @@ ReactDOM.render(
   <Auth0Provider
     domain={"dev-qu5lnxfn8lophrcd.us.auth0.com"}
     clientId={"U4B2PRZwMvA6rWt90WdLF7nHNqBiVH4V"}
-    redirectUri={"http://localhost:3000/dashboard"}
+    // redirectUri={"http://localhost:3000/dashboard"}
+    redirectUri={"chrome-extension://ndhjnbhhijpobdlgbmbmchgilhmanapn"}
     audience={"toranoi-backend-local"}
     scope={"read:status"}
   >
